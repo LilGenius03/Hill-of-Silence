@@ -472,63 +472,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec35713a594a29d4d93a7c054ae9cb4f, type: 3}
---- !u!1001 &6107199271259839073
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.0218687
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.1392913
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2818407188479892654, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3195073911657072148, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
-      propertyPath: m_Name
-      value: Dick Richardson
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 08910f585f2d25c4490da795d8d6ef1d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -537,4 +480,3 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 351125920}
   - {fileID: 525981960142004076}
-  - {fileID: 6107199271259839073}
