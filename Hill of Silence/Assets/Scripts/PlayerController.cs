@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
 
+    public Animator anim;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -72,6 +74,12 @@ public class PlayerController : MonoBehaviour
         if(grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            anim.SetFloat("speed", (Mathf.Abs(moveSpeed)));
+
+            if(moveSpeed <= 0.01f)
+            {
+                anim.SetFloat("speed", 0);
+            }
         }
         else if (!grounded)
         {
