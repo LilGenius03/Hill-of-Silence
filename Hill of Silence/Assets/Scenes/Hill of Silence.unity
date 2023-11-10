@@ -256,12 +256,28 @@ PrefabInstance:
       value: Note
       objectReference: {fileID: 0}
     - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
+      propertyPath: m_Size.x
+      value: 3.4356427
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
       propertyPath: m_Size.y
-      value: 3557.7356
+      value: 6064.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
+      propertyPath: m_Size.z
+      value: 2.2921264
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
+      propertyPath: m_Center.x
+      value: -0.37153625
       objectReference: {fileID: 0}
     - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
       propertyPath: m_Center.y
-      value: 1778.3679
+      value: 3031.523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422310181504715107, guid: f38bd566210d8444ba00ecfee192eae7, type: 3}
+      propertyPath: m_Center.z
+      value: -0.015943116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7206,6 +7222,14 @@ PrefabInstance:
     - target: {fileID: 6686309919913103250, guid: 18115e36a50fb7b439c8b1766f2f916d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878216703997074011, guid: 18115e36a50fb7b439c8b1766f2f916d, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878216703997074011, guid: 18115e36a50fb7b439c8b1766f2f916d, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
