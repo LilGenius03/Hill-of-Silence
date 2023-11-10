@@ -1,10 +1,15 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
+
+    
 
     public float groundDrag;
 
@@ -25,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection;
 
     private Rigidbody rb;
+
+    
 
     public Animator anim;
 
@@ -49,11 +56,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+    
     }
 
     private void FixedUpdate()
     {
         Move();
+       
     }
 
     private void Controls()
@@ -74,12 +84,7 @@ public class PlayerController : MonoBehaviour
         if(grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-            anim.SetFloat("speed", (Mathf.Abs(moveSpeed)));
-
-            if(moveSpeed <= 0.01f)
-            {
-                anim.SetFloat("speed", 0);
-            }
+            
         }
         else if (!grounded)
         {
@@ -87,9 +92,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void SpeedControl()
+    public void SpeedControl()
     {
         Vector3 flatVelocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        float CurrentSpeed = rb.velocity.magnitude;
+
+        if(CurrentSpeed < 0.1f)
+        {
+            anim.SetFloat("Speed", 0f);
+        }
+
+        else if(CurrentSpeed > 0.1f)
+        {
+            anim.SetFloat("Speed", 1f);
+        }
 
         if (flatVelocity.magnitude > moveSpeed)
         {
