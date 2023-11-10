@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("Speed", 0f);
         }
 
-        else if(CurrentSpeed > 0.1f)
+        else if(CurrentSpeed > 0.01f)
         {
             anim.SetFloat("Speed", 1f);
         }
