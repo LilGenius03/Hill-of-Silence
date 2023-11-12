@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
 
-    
 
     public float groundDrag;
 
@@ -101,6 +100,7 @@ public class PlayerController : MonoBehaviour
         if(CurrentSpeed < 0.1f)
         {
             anim.SetFloat("Speed", 0f);
+
         }
 
         else if(CurrentSpeed > 0.01f)
