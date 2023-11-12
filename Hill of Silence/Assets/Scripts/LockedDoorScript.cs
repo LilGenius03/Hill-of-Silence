@@ -25,10 +25,10 @@ public class LockedDoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("CorrectCylinder"))
+        if (collision.CompareTag("Player"))
         {
                 Destroy(gameObject);
-            
+                
         }
     }
 
