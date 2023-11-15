@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
 
-    
+    public GameObject footsteps;
 
     public Animator anim;
 
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (!grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);           
         }
     }
 
@@ -100,12 +100,13 @@ public class PlayerController : MonoBehaviour
         if(CurrentSpeed < 0.1f)
         {
             anim.SetFloat("Speed", 0f);
-
+            footsteps.SetActive(false);
         }
 
         else if(CurrentSpeed > 0.01f)
         {
             anim.SetFloat("Speed", 1f);
+            footsteps.SetActive(true);
         }
 
         if (flatVelocity.magnitude > moveSpeed)
