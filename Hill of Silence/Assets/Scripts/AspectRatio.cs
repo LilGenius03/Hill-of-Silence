@@ -7,7 +7,7 @@ public class AspectRatio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(1024, 768, true);
+        Screen.SetResolution(1920, 1440, true);
     }
 
     
