@@ -99,13 +99,13 @@ public class PlayerController : MonoBehaviour
 
         if(CurrentSpeed < 0.1f)
         {
-            anim.SetFloat("Speed", 0f);
+            anim.SetFloat("speed", 0f);
             footsteps.SetActive(false);
         }
 
         else if(CurrentSpeed > 0.01f)
         {
-            anim.SetFloat("Speed", 1f);
+            anim.SetFloat("speed", 1f);
             footsteps.SetActive(true);
         }
 
