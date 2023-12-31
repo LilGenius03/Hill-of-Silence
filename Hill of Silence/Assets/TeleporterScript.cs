@@ -25,5 +25,10 @@ public class TeleporterScript : MonoBehaviour
             interactToTeleport = true;
         }
 
+        if(interactToTeleport == true)
+        {
+            interactToTeleport = false;
+        }
+
    }
 }
