@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,8 +9,12 @@ public class Interation : MonoBehaviour
 {
     public UnityEvent enteredInteration, exitedInteration, interacted;
     private bool interactionEnabled;
-    public bool interactedEnabled = false;
-    
+    public bool interactedEnabled = true;
+
+    private void Start()
+    {
+        interactedEnabled = true;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,5 +44,9 @@ public class Interation : MonoBehaviour
             interactedEnabled = true;
             
         }
+
+        
+
+      
     }
 }

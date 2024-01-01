@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TeleporterScript : MonoBehaviour
 {
     public Transform Receiver;
     private Vector3 RsavedPos;
-    public bool interactToTeleport;
     Interation interaction;
     public Transform PlayerPos;
     
@@ -15,20 +15,17 @@ public class TeleporterScript : MonoBehaviour
     {
         interaction = GetComponent<Interation>();
         RsavedPos = Receiver.transform.position;
+
     }
 
    public void TeleportPlayer()
    {
-        if(interaction.interactedEnabled == true) 
+        if (interaction.interactedEnabled == true) 
         {
             PlayerPos.transform.position = RsavedPos;
-            interactToTeleport = true;
         }
 
-        if(interactToTeleport == true)
-        {
-            interactToTeleport = false;
-        }
+        
 
    }
 }
