@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key1GotObject: {fileID: 1073321079}
   animationSeconds: 2
-  _inventoryItems: 00000000
+  _inventoryItems: 
 --- !u!1001 &227640031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3163,7 +3163,7 @@ GameObject:
   m_Layer: 3
   m_Name: Bathroom Level Receiver
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3175,13 +3175,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090191665}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.57, z: -0.293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 776922670}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1095606238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,7 +4581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443162867}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1933083, y: 0.012821892, z: 0.0025264514, w: 0.981051}
+  m_LocalRotation: {x: -0.1933083, y: 0.012821926, z: 0.0025264581, w: 0.981051}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5590,8 +5590,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.41
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.2191836
+  m_Center: {x: 0, y: 6843.4385, z: 0}
 --- !u!1 &1992095220
 GameObject:
   m_ObjectHideFlags: 0
@@ -15419,6 +15419,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: New Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6236145620552316005, guid: 04edae543c7c408419d942391805cdb7, type: 3}
+      propertyPath: m_Height
+      value: 3.804489
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236145620552316005, guid: 04edae543c7c408419d942391805cdb7, type: 3}
+      propertyPath: m_Radius
+      value: 0.6096039
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236145620552316005, guid: 04edae543c7c408419d942391805cdb7, type: 3}
+      propertyPath: m_Center.y
+      value: 0.90224445
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236145620552316005, guid: 04edae543c7c408419d942391805cdb7, type: 3}
+      propertyPath: m_Center.z
+      value: 0.2168274
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3013872715707979195, guid: 04edae543c7c408419d942391805cdb7, type: 3}
@@ -19841,6 +19857,7 @@ GameObject:
   - component: {fileID: 5139383745676207641}
   - component: {fileID: 2040009048060587206}
   - component: {fileID: 2613683664262494019}
+  - component: {fileID: 5847730836722170374}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Bathroom
@@ -19848,6 +19865,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5847730836722170374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5847730836722170373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1550514412580984892, guid: 7698d2fb22da56341884d84351b9fbb6, type: 3}
 --- !u!33 &5856643290158929645
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27935,6 +27974,7 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 216349215}
   - {fileID: 705507995}
   - {fileID: 3829580796382538086}
   - {fileID: 5145405463578590309}
@@ -27945,7 +27985,6 @@ SceneRoots:
   - {fileID: 1122311694}
   - {fileID: 478327437}
   - {fileID: 1785586930}
-  - {fileID: 216349215}
   - {fileID: 68263463107651578}
   - {fileID: 1157047425726916089}
   - {fileID: 182105064}
