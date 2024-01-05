@@ -5,6 +5,8 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
+    public GameObject Key1GotObject;
+    public float animationSeconds;
 
     public List<AllItems> _inventoryItems = new List<AllItems>(); //New Inventory list
 
@@ -18,6 +20,11 @@ public class InventoryManager : MonoBehaviour
         if (!_inventoryItems.Contains(item))
         {
             _inventoryItems.Add(item);
+        }
+
+        else if(!_inventoryItems.Contains(AllItems.Key1))
+        {
+            StartCoroutine("ItemsGot");
         }
     }
 
@@ -43,4 +50,13 @@ public class InventoryManager : MonoBehaviour
         PuzzlePiece3,
         PuzzlePiece4
     }
+
+    public IEnumerator ItemsGot(float seconds)
+    {
+        seconds = animationSeconds;
+        Key1GotObject.SetActive(true);
+        yield return new WaitForSeconds(seconds);
+        Key1GotObject.SetActive(false);
+    }
+    
 }
