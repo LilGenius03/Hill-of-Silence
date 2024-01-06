@@ -7,7 +7,7 @@ using UnityEngine;
 public class LockedDoorScript : MonoBehaviour
 {
 
- 
+    public GameObject Shears;
     [SerializeField] InventoryManager.AllItems _requiredItem;
 
     public bool HasRequiredItem(InventoryManager.AllItems itemRequired)
@@ -35,6 +35,14 @@ public class LockedDoorScript : MonoBehaviour
             }
        }
 
+    }
+
+    private void Update()
+    {
+        if(HasRequiredItem(InventoryManager.AllItems.Key1))
+        {
+            Shears.SetActive(true);
+        }
     }
 
 
