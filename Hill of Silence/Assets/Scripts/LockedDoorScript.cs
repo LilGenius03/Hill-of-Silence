@@ -8,6 +8,7 @@ public class LockedDoorScript : MonoBehaviour
 {
 
     public GameObject Shears;
+    public GameObject Shedkey;
     [SerializeField] InventoryManager.AllItems _requiredItem;
 
     public bool HasRequiredItem(InventoryManager.AllItems itemRequired)
@@ -42,7 +43,15 @@ public class LockedDoorScript : MonoBehaviour
         if(HasRequiredItem(InventoryManager.AllItems.Key1))
         {
             Shears.SetActive(true);
+            StartCoroutine("ShedKey");
         }
+    }
+
+    IEnumerator ShedKey()
+    {
+        Shedkey.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Shedkey.SetActive(false);
     }
 
 
