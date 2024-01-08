@@ -43,7 +43,6 @@ public class LockedDoorScript : MonoBehaviour
         if(HasRequiredItem(InventoryManager.AllItems.Key1))
         {
             Shears.SetActive(true);
-            StartCoroutine("ShedKey");
         }
     }
 

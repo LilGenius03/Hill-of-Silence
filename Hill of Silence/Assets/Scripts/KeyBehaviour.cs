@@ -13,7 +13,8 @@ public class KeyBehaviour : MonoBehaviour
             Debug.Log("Collide");
             InventoryManager.Instance.AddItem(_itemType);
             Destroy(gameObject);
-            
         }
     }
+
+   
 }
