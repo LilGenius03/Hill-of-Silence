@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class destroy : MonoBehaviour
 {
+    public GameObject DestroyedObject;
+    public float time = 10f;
 
-    public GameObject key;
-    private void OnTriggerEnter(Collider other)
+    public void Destroyed()
     {
-        if (other.tag == ("Player"))
-        {
-            Debug.Log("Destroy");
-            Destroy(key);
-        }
+        Instantiate(DestroyedObject, transform.position, transform.rotation);
+        Destroy(gameObject);
+        Destroy(DestroyedObject, time);
     }
 }
