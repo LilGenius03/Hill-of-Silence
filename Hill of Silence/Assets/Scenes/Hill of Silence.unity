@@ -1229,7 +1229,7 @@ Camera:
   m_GameObject: {fileID: 316049748}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1261,7 +1261,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 32
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8600000, guid: abaeefe01d97bc448ac573ca48cad680, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 846a8dc6f9fc18f49bde9473d0bc5f34, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
+  m_CameraType: 1
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -1804,7 +1804,8 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_Cameras: []
+  m_Cameras:
+  - {fileID: 316049750}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
@@ -15852,7 +15853,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  displayTime: 5
+  displayTime: 10
 --- !u!33 &3469287836723801442
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15961,7 +15962,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  displayTime: 5
+  displayTime: 10
 --- !u!33 &3469287838323135087
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16013,7 +16014,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  displayTime: 5
+  displayTime: 10
 --- !u!135 &3469287838323135089
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30548,6 +30549,7 @@ SceneRoots:
   - {fileID: 216349215}
   - {fileID: 705507995}
   - {fileID: 3829580796382538086}
+  - {fileID: 562454083}
   - {fileID: 5145405463578590309}
   - {fileID: 2027410994}
   - {fileID: 696856004036333224}
@@ -30561,7 +30563,6 @@ SceneRoots:
   - {fileID: 168289906}
   - {fileID: 543450653545808251}
   - {fileID: 30275034}
-  - {fileID: 562454083}
   - {fileID: 316049751}
   - {fileID: 543450651848989192}
   - {fileID: 1174890766}
