@@ -8073,9 +8073,37 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1661760767437648869}
+    - target: {fileID: 521726550860631527, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_Orbits.Array.data[0].m_Radius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 521726550860631527, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_Orbits.Array.data[1].m_Radius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 521726550860631527, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_Orbits.Array.data[2].m_Radius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4115300569909092705, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_Name
       value: FreeLook Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252158038677345062, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9831376
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252158038677345062, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18228114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252158038677345062, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.014388426
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252158038677345062, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.002667723
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8083,15 +8111,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.69999695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97499824
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22182822
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.012742786
+      value: 0.012742801
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0028991941
+      value: 0.0028991983
       objectReference: {fileID: 0}
     - target: {fileID: 5894523724737777863, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8103,7 +8139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894523724737777863, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 188.90001
+      value: 189.6
       objectReference: {fileID: 0}
     - target: {fileID: 5894523724737777863, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8134,12 +8170,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8797868013870854897, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97736293
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797868013870854897, guid: 1733c0f712166cd458876e5f57836016, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.21106306
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797868013870854897, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.012821892
+      value: 0.014303895
       objectReference: {fileID: 0}
     - target: {fileID: 8797868013870854897, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0025264514
+      value: 0.0030889483
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8883,7 +8927,7 @@ GameObject:
   - component: {fileID: 543450652932196323}
   - component: {fileID: 3469287836915943494}
   - component: {fileID: 1711813856342686860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bathroom wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8901,7 +8945,7 @@ GameObject:
   - component: {fileID: 543450652874793671}
   - component: {fileID: 3469287836723801442}
   - component: {fileID: 1711813855884188072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bathroom wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8974,7 +9018,7 @@ GameObject:
   - component: {fileID: 543450653201699345}
   - component: {fileID: 3469287837185449396}
   - component: {fileID: 1711813855540504958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bathroom level roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9138,7 +9182,7 @@ GameObject:
   - component: {fileID: 8581986478088836586}
   - component: {fileID: 7784471659460211784}
   - component: {fileID: 8581986478088836587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -18212,7 +18256,7 @@ GameObject:
   - component: {fileID: 1016295186942573888}
   - component: {fileID: 6570591303475880369}
   - component: {fileID: 6570591303475880370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.004
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -18517,7 +18561,7 @@ GameObject:
   - component: {fileID: 2227236936452456436}
   - component: {fileID: 1612183114207322081}
   - component: {fileID: 7107704344356365939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.003
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -21743,7 +21787,7 @@ GameObject:
   - component: {fileID: 2040009048060587206}
   - component: {fileID: 2613683664262494019}
   - component: {fileID: 5847730836722170374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.002
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -23236,7 +23280,7 @@ GameObject:
   - component: {fileID: 1808792064665174750}
   - component: {fileID: 8887263489449675601}
   - component: {fileID: 8887263489449675602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.005
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -24514,7 +24558,7 @@ GameObject:
   - component: {fileID: 2838219759757674593}
   - component: {fileID: 7885598498976788449}
   - component: {fileID: 7885598498976788450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.011
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
@@ -27713,23 +27757,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353083404342574101, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.099991
+      value: -5.399994
       objectReference: {fileID: 0}
     - target: {fileID: 353083404342574101, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9863029
+      value: 0.9831376
       objectReference: {fileID: 0}
     - target: {fileID: 353083404342574101, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.16442573
+      value: -0.18228117
       objectReference: {fileID: 0}
     - target: {fileID: 353083404342574101, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.012890548
+      value: 0.014388456
       objectReference: {fileID: 0}
     - target: {fileID: 353083404342574101, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0021489728
+      value: 0.0026677288
       objectReference: {fileID: 0}
     - target: {fileID: 523910996864803982, guid: beb8739e46d11bb48b156b13ea58ec3a, type: 3}
       propertyPath: rb
@@ -27913,7 +27957,7 @@ GameObject:
   - component: {fileID: 7666443845973086276}
   - component: {fileID: 1353388575905683183}
   - component: {fileID: 8319479514208285018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.010
   m_TagString: Bathroom
   m_Icon: {fileID: 0}
