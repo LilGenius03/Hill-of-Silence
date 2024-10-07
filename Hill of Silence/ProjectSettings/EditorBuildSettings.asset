@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/QuoteScene.unity
-    guid: 5300f2812e725ec4d9587d71da7495b0
-  - enabled: 1
     path: Assets/Scenes/Hill of Silence.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Bathroom Level.unity
+    guid: d52981ba8d7bdfb4eab74acc36f534a4
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 2991c419c4fd8c34c92f8dccf6643078

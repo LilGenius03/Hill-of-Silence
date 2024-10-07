@@ -2,30 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TeleporterScript : MonoBehaviour
 {
-    public Transform Receiver;
-    private Vector3 RsavedPos;
-    Interation interaction;
-    public Transform PlayerPos;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        interaction = GetComponent<Interation>();
-        RsavedPos = Receiver.transform.position;
+   
+    [SerializeField] private GameObject PressF;
 
+    private void Start()
+    {
+       PressF.SetActive(false);
+    }
+    void TeleportPlayerToBathroom()
+    {
+        
+        
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
-   public void TeleportPlayer()
-   {
-        if (interaction.interactedEnabled == true) 
+    /*void TeleportPlayerToSewer()
+    {
+        if(isInSewer == false)
         {
-            PlayerPos.transform.position = RsavedPos;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            isInSewer=true;
         }
 
-        
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            isInSewer = false;
+        }
+    }*/
+    private void OnTriggerEnter(Collider other)
+    {
+        PressF.SetActive(true);
+        if(other.CompareTag("Player"))
+        {
+            TeleportPlayerToBathroom();
+        }
+    }
 
-   }
+    private void OnTriggerExit(Collider other)
+    {
+        PressF.SetActive(false);
+    }
+
 }
