@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 2991c419c4fd8c34c92f8dccf6643078
+  - enabled: 1
+    path: Assets/Scenes/JamesKeypadScene.unity
+    guid: 9a7402b72c8c3ce49852ad1d9de18c1f
+  - enabled: 1
+    path: Assets/Scenes/JamesCombinationLockScene.unity
+    guid: 1965abb08421f224fa21fa80b10a2205
   m_configObjects: {}
