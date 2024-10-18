@@ -1,21 +1,19 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class LockedDoorScript : MonoBehaviour
+public class TunnelDoorPodiumScript : MonoBehaviour
 {
     [SerializeField] InventoryManager.AllItems _requiredItem;
 
-    public GameObject GardaiInteractionText;
+    public GameObject LockedDoorToDestroy;
 
     public bool HasRequiredItem(InventoryManager.AllItems itemRequired)
     {
         if (InventoryManager.Instance._inventoryItems.Contains(itemRequired))
         {
             return true;
-            
+
         }
 
         else
@@ -26,18 +24,14 @@ public class LockedDoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-       if(HasRequiredItem(InventoryManager.AllItems.Key1) || HasRequiredItem(InventoryManager.AllItems.Key2) || HasRequiredItem(InventoryManager.AllItems.Key3))
-       {
+        if (HasRequiredItem(InventoryManager.AllItems.Key1) || HasRequiredItem(InventoryManager.AllItems.Key2) || HasRequiredItem(InventoryManager.AllItems.Key3))
+        {
             if (collision.CompareTag("Player"))
             {
-                GardaiInteractionText.SetActive(false);
-                Destroy(gameObject);
+                Destroy(LockedDoorToDestroy);
 
             }
-       }
+        }
 
     }
-
-
-
 }
