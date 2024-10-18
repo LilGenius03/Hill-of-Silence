@@ -38,6 +38,8 @@ public class LockInteractScript : MonoBehaviour
             }
             else if(Input.GetKeyDown(KeyCode.F) && isPlayerCamActive == false)
             {
+
+                PlayerInteractWithLockText.SetActive(false);
                 dickRichardsonModel.SetActive(true);
                 CM.SwitchCamera(CM.thirdPersonCam);
                 LockExitText?.SetActive(false);
