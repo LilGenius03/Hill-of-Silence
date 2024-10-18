@@ -6,6 +6,7 @@ public class LockInteractScript : MonoBehaviour
 {
     public CameraManager CM;
     public bool isPlayerCamActive;
+    [SerializeField] GameObject lockLight;
 
     public GameObject dickRichardsonModel;
     
@@ -13,6 +14,7 @@ public class LockInteractScript : MonoBehaviour
     void Start()
     {
         isPlayerCamActive = true;
+        lockLight.SetActive(false);
         StartCoroutine(ExampleCoroutine());
     }
 
@@ -28,11 +30,13 @@ public class LockInteractScript : MonoBehaviour
                 dickRichardsonModel.SetActive(false);
                 //ExampleCoroutine();
                 isPlayerCamActive = false;
+                lockLight.SetActive(true);
             }
             else if(Input.GetKeyDown(KeyCode.E) && isPlayerCamActive == false)
             {
                 dickRichardsonModel.SetActive(true);
                 CM.SwitchCamera(CM.thirdPersonCam);
+                lockLight.SetActive(false);
                 //ExampleCoroutine();
                 isPlayerCamActive = true;
             } 
