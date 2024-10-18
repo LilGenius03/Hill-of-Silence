@@ -6,6 +6,8 @@ public class LockInteractScript : MonoBehaviour
 {
     public CameraManager CM;
     public bool isPlayerCamActive;
+    public GameObject PlayerInteractWithLockText;
+    public GameObject LockExitText;
     [SerializeField] GameObject lockLight;
 
     public GameObject dickRichardsonModel;
@@ -22,25 +24,33 @@ public class LockInteractScript : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            PlayerInteractWithLockText.SetActive(true);
 
             Debug.Log("Player can interact with lock");
-            if(Input.GetKeyDown(KeyCode.E) && isPlayerCamActive == true)
+            if(Input.GetKeyDown(KeyCode.F) && isPlayerCamActive == true)
             {
                 CM.SwitchCamera(CM.lockCam);
                 dickRichardsonModel.SetActive(false);
+                LockExitText.SetActive(true);
                 //ExampleCoroutine();
                 isPlayerCamActive = false;
                 lockLight.SetActive(true);
             }
-            else if(Input.GetKeyDown(KeyCode.E) && isPlayerCamActive == false)
+            else if(Input.GetKeyDown(KeyCode.F) && isPlayerCamActive == false)
             {
                 dickRichardsonModel.SetActive(true);
                 CM.SwitchCamera(CM.thirdPersonCam);
+                LockExitText?.SetActive(false);
                 lockLight.SetActive(false);
                 //ExampleCoroutine();
                 isPlayerCamActive = true;
             } 
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        PlayerInteractWithLockText.SetActive(false);
     }
 
     private void Update()

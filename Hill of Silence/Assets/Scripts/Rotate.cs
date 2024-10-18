@@ -77,7 +77,7 @@ public class Rotate : MonoBehaviour
 
         for (int i = 0; i <= 11; i++) 
         {
-            wheelOneOBJ.transform.Rotate(0f, 0f, 3f);
+            wheelOneOBJ.transform.Rotate(0f, 0f, 1.5f);
         }
 
         coroutineAllowed = true;
@@ -96,7 +96,7 @@ public class Rotate : MonoBehaviour
     {
         for(int i = 0; i <= 11; i++) 
         {
-           wheelTwoOBJ.transform.Rotate(0f, 0f, 3f);
+           wheelTwoOBJ.transform.Rotate(0f, 0f, 1.5f);
         }
 
         coroutineAllowed = true;
@@ -113,7 +113,7 @@ public class Rotate : MonoBehaviour
     {
         for(int i = 0; i <= 11; i++) 
         {
-           wheelThreeOBJ.transform.Rotate(0f, 0f, 3f);
+           wheelThreeOBJ.transform.Rotate(0f, 0f, 1.5f);
         }
 
         coroutineAllowed = true;
