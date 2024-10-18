@@ -4552,6 +4552,10 @@ PrefabInstance:
       propertyPath: cabinetWalls
       value: 
       objectReference: {fileID: 832149484885513851}
+    - target: {fileID: 5318246635989510497, guid: 69e778da7e76f214b92afe8604566baa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b0542007f6d89874bb911323b75ae7a6, type: 2}
     - target: {fileID: 7594840912135034038, guid: 69e778da7e76f214b92afe8604566baa, type: 3}
       propertyPath: m_Size.x
       value: 31.42
@@ -5962,11 +5966,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.015218751
+      value: -0.015218789
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.002326417
+      value: 0.0023264226
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.y
