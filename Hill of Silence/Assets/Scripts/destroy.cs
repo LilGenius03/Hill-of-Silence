@@ -6,11 +6,12 @@ using UnityEngine.Events;
 public class destroy : MonoBehaviour
 {
     public GameObject DestroyedObject;
-    public float time = 10f;
+    public Transform objectTransform;
+    public float time = 100f;
 
     public void Destroyed()
     {
-        Instantiate(DestroyedObject, transform.position, transform.rotation);
+        Instantiate(DestroyedObject, objectTransform.position, objectTransform.rotation);
         Destroy(gameObject);
         Destroy(DestroyedObject, time);
     }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 2991c419c4fd8c34c92f8dccf6643078
+  - enabled: 1
+    path: Assets/Scenes/Over.unity
+    guid: 790e195ae750b2143bd81a3a45ed9988
   m_configObjects: {}

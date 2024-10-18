@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void Play()
     {
         SceneManager.LoadScene("Hill of Silence");
