@@ -15,6 +15,7 @@ public class LockInteractScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerInteractWithLockText.SetActive(false);
         isPlayerCamActive = true;
         lockLight.SetActive(false);
         StartCoroutine(ExampleCoroutine());
@@ -25,18 +26,18 @@ public class LockInteractScript : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             PlayerInteractWithLockText.SetActive(true);
-
-            Debug.Log("Player can interact with lock");
-            if(Input.GetKeyDown(KeyCode.F) && isPlayerCamActive == true)
+            if(Input.GetKey(KeyCode.F) && isPlayerCamActive == true)
             {
+
+                PlayerInteractWithLockText.SetActive(false);
                 CM.SwitchCamera(CM.lockCam);
                 dickRichardsonModel.SetActive(false);
                 LockExitText.SetActive(true);
                 //ExampleCoroutine();
-                isPlayerCamActive = false;
                 lockLight.SetActive(true);
+                isPlayerCamActive = false;
             }
-            else if(Input.GetKeyDown(KeyCode.F) && isPlayerCamActive == false)
+            else if(Input.GetKey(KeyCode.F) && isPlayerCamActive == false)
             {
 
                 PlayerInteractWithLockText.SetActive(false);
@@ -53,14 +54,6 @@ public class LockInteractScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         PlayerInteractWithLockText.SetActive(false);
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("E key pressed");
-        }
     }
 
     IEnumerator ExampleCoroutine()

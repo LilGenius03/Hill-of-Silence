@@ -32,8 +32,9 @@ public class AFKScript : MonoBehaviour
 
     void GoToFirstScene()
     {
-        SceneManager.LoadScene(0);
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(0);
     }
 }
 

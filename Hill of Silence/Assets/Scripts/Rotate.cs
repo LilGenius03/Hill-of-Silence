@@ -7,6 +7,8 @@ public class Rotate : MonoBehaviour
 {
 
     private bool coroutineAllowed;
+    public GameObject LockInteracvtText;
+    public GameObject LockExitText;
 
     [Header("Script References")]
     [SerializeField ]public CameraManager CM;
@@ -131,6 +133,8 @@ public class Rotate : MonoBehaviour
         cabinetDoor1.SetActive(false);
         cabinetDoor2.SetActive(false);
         cabinetWalls.SetActive(false);
+        LockInteracvtText.SetActive(false);
+        LockExitText.SetActive(false);
         CM.SwitchCamera(CM.thirdPersonCam);
         lockInteractScript.isPlayerCamActive = true;
         playerModel.SetActive(true);

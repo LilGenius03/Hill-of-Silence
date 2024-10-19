@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MonsterAI : MonoBehaviour
 {
-    
     public Transform player; 
     public float followRange = 15f; 
     public float attackRange = 2f; 
