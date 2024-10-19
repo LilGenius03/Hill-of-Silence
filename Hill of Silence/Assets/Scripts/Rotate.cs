@@ -23,6 +23,7 @@ public class Rotate : MonoBehaviour
     public GameObject cabinetDoor1;
     public GameObject cabinetDoor2;
     public GameObject cabinetWalls;
+    public GameObject HillofSilenceKey;
 
     [Header("Player Model Reference")]
     public GameObject playerModel;
@@ -40,6 +41,7 @@ public class Rotate : MonoBehaviour
     private void Start()
     {
         coroutineAllowed = true;
+        HillofSilenceKey.SetActive(false);
     }
 
 
@@ -133,6 +135,7 @@ public class Rotate : MonoBehaviour
         cabinetDoor1.SetActive(false);
         cabinetDoor2.SetActive(false);
         cabinetWalls.SetActive(false);
+        HillofSilenceKey.SetActive(true);
         LockInteracvtText.SetActive(false);
         LockExitText.SetActive(false);
         CM.SwitchCamera(CM.thirdPersonCam);
