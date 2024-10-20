@@ -6146,11 +6146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.01521879
+      value: -0.015218751
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0023264228
+      value: 0.002326417
       objectReference: {fileID: 0}
     - target: {fileID: 5629661765947354097, guid: 1733c0f712166cd458876e5f57836016, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6497,6 +6497,10 @@ PrefabInstance:
     - target: {fileID: 5422218439846826481, guid: 0e7d7cc5eaa0cf441a41c78584b99d59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133383521502633424, guid: 0e7d7cc5eaa0cf441a41c78584b99d59, type: 3}
+      propertyPath: RotationSpeed
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7385,6 +7389,10 @@ PrefabInstance:
       propertyPath: GardaiInteractionText
       value: 
       objectReference: {fileID: 1599976952}
+    - target: {fileID: 4939076351242045055, guid: 7c46f028e30c02f468fc138a10c7a5e4, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5245091758234999277, guid: 7c46f028e30c02f468fc138a10c7a5e4, type: 3}
       propertyPath: m_Layer
       value: 6
